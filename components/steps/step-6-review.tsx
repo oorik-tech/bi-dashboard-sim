@@ -125,7 +125,7 @@ export function Step6Review() {
   const { company, selections } = config
   const totalBaseItems = selections.baseKPIs.length + selections.baseVisuals.length
   const totalPremiumItems = selections.premiumKPIs.length + selections.premiumVisuals.length
-  const totalForecastingItems = selections.forecasting.basic.length + (selections.forecasting.advancedEnabled ? 1 : 0)
+  const totalForecastingItems = selections.forecasting.basic.length + (selections.forecasting.advancedPackEnabled ? 1 : 0)
 
   return (
     <div className="space-y-8">
@@ -203,7 +203,7 @@ export function Step6Review() {
                 <span className="text-sm text-muted-foreground">Forecasting Features</span>
                 <Badge variant="secondary">{totalForecastingItems} items</Badge>
               </div>
-              {selections.intelligenceEnabled && (
+              {selections.intelligencePackEnabled && (
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-muted-foreground">Intelligence Pack</span>
                   <Badge className="bg-[#03045E] text-white">Enabled</Badge>
