@@ -100,7 +100,7 @@ export function Step5Forecasting() {
           >
             {ADVANCED_FORECASTING_FEATURES.map((feature, idx) => (
               <div key={idx} className="flex items-start gap-2 text-sm">
-                <div className="h-1.5 w-1.5 rounded-full bg-[#03045E] mt-1.5 flex-shrink-0" />
+                <div className="h-1.5 w-1.5 rounded-full bg-[#03045E] mt-1.5 shrink-0" />
                 <span className="text-muted-foreground leading-snug">{feature}</span>
               </div>
             ))}
